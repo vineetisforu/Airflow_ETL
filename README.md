@@ -38,17 +38,17 @@ Missing variables/keyword for the DAG which needs to be added to the Airflow. Th
 
 To Add the variables, go to the Admin > Variables in the Airflow UI
 
-# First,
+### First,
 
 Key : db_connection_string
 Val : Database Connection String
 
-# Second,
+### Second,
 
 Key : tsv_folder_path
 Val : path for source tsv files
 
-# Third,
+### Third,
 
 Key : parquet_folder_path
 Val : path for target parquet files
