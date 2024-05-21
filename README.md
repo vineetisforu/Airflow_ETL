@@ -41,16 +41,19 @@ To Add the variables, go to the Admin > Variables in the Airflow UI
 ### First,
 
 Key : db_connection_string
+
 Val : Database Connection String
 
 ### Second,
 
 Key : tsv_folder_path
+
 Val : path for source tsv files
 
 ### Third,
 
 Key : parquet_folder_path
+
 Val : path for target parquet files
 
 Once the values are added the DAG error should be gone automatically.
