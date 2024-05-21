@@ -58,6 +58,12 @@ Val : path for target parquet files
 
 Once the values are added the DAG error should be gone automatically.
 
+![image](https://github.com/vineetisforu/Airflow_ETL/assets/9901025/a8512ba7-8d21-48dc-b95c-4ce0b080f2a7)
+
+
 Now you are ready to run the DAG for dataload/ETL, make sure the tsv_folder_path exist with the valid files for processing and create the parquet_folder_path as well and let it be empty
 
 Run the DAG by triggering it from the UI. It should take some time to transform the TSV to batch of parquet files(where different transformation can be appplied) followed by loading it to the destination Mysql Tables and deleting the intermediate parquet files
+
+
+![image](https://github.com/vineetisforu/Airflow_ETL/assets/9901025/70f24e8a-ed9e-4d8b-95fb-64b25b4bd071)
