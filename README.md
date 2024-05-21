@@ -1,4 +1,4 @@
-## About:
+## Scope:
 
 Running a ETL pipeline on Airflow which will extract the tsv files and transform it into parquet file and finally loading it into Mysql Tables
 	
