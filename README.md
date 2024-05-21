@@ -1,8 +1,8 @@
-##About:
+## About:
 
 Running a ETL pipeline on Airflow which will extract the tsv files and transform it into parquet file and finally loading it into Mysql Tables
 	
-##Requirements:
+## Requirements:
 	
 pandas==1.5.3
 sqlalchemy==1.4.46
@@ -11,44 +11,44 @@ pymysql
 
 Installation of Airflow, Mysql and Python3
 
-##How to run?
+## How to run?
 
 Start the Airflow web,
 
- >airflow webserver --port 8080
+ > airflow webserver --port 8080
  
 Start the Airflow scheduler,
 
- >airflow scheduler
+ > airflow scheduler
  
  
 If not present, create the Airflow DAG folder
 
-	>/home/vineet/airflow/dags
+	> /home/vineet/airflow/dags
 
 and copy the Telemetry_dag.py file in the Airflow DAG folder/DAG_BAG of Airflow and enable the DAG through the toggle button in the Airflow UI 
 
 
 The DAG would reflect in the Airflow UI but would be broken. 
 
-##Reason?
+## Reason?
 
 Missing variables/keyword for the DAG which needs to be added to the Airflow. There are three variables to add to the Airflow, 
 
 
 To Add the variables, go to the Admin > Variables in the Airflow UI
 
-#First,
+# First,
 
 Key : db_connection_string
 Val : Database Connection String
 
-#Second,
+# Second,
 
 Key : tsv_folder_path
 Val : path for source tsv files
 
-#Third,
+# Third,
 
 Key : parquet_folder_path
 Val : path for target parquet files
